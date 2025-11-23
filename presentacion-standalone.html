@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentación IA y Medio Ambiente - Sergio Villanueva</title>
+  <style>
+    /* Nota: Este HTML usa los archivos del build. 
+       Para que funcione offline, asegúrate de tener:
+       - Este archivo HTML
+       - La carpeta 'assets' con todos los archivos generados en el build
+       
+       Copia toda la carpeta 'build' a donde quieras usar la presentación offline.
+    */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <!-- 
+    Para usar esta presentación offline:
+    1. Asegúrate de tener la carpeta 'assets' con todos los archivos del build
+    2. Abre este HTML en un navegador
+    3. Si encuentras problemas de CORS al abrir directamente, usa un servidor local:
+       - Python: python -m http.server 8000
+       - Node: npx serve .
+       - PHP: php -S localhost:8000
+  -->
+  <script>
+    // Redirector simple para usar los archivos del build
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.src = './assets/index-Dg7MWG2k.js';
+    script.crossOrigin = 'anonymous';
+    document.head.appendChild(script);
+    
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = './assets/index-BVYo0Klu.css';
+    link.crossOrigin = 'anonymous';
+    document.head.appendChild(link);
+  </script>
+</body>
+</html>
